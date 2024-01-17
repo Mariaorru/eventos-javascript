@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<!-- lo que se ve en la pestaña de la web -->
+		<title> Eventos </title>
+		<script>
+			function sobre (){alert('Enhorabuena has pasado por encima');}
+			function AbrirOal (){window.open('https://oalhuetortajar.com/','_self');}
+			function CambiarColor (){document.getElementById('miTexto').style.color='red';}
+			function VolverColor (){document.getElementById('miTexto').style.color='black';}
+		</script>
+	</head>
+<!--	
+	<body onload="alert('hola buenos días')">
+-->
+	<body>
+		<p onclick="alert('has hecho un click')"> Bienvenidos </p>
+		<button ondblclick="alert('Enhorabuena has hecho doble click')">Doble click</button>
+		<!--
+		<h1 style="display:none;" onmouseover="sobre()">Pasa por encima </h1>
+		-->
+		<button onkeydown="alert('has pulsado la tecla')"> presiona una tecla</button>
+
+		<ul onmousemove="alert('ha pasado el ratón')"> <span>
+			<li>Primero </li>
+			<li>Segundo </li>
+			<li>Tercero </li>
+		</span>
+		</ul>		
+		<table onmouseup="alert('has presionado el ratón')" border="5px">
+			<tr>
+				<td> tigre </td>
+				<td> león </td>
+				<td> gato </td>
+			</tr>
+			<tr>
+				<td> perro </td>
+				<td>pantera </td>
+				<td> caracol</td>
+			</tr>
+			<tr>
+				<td>cerdo </td>
+				<td> loro</td>
+				<td> saltamontes</td>
+			</tr>
+		</table>
+		<button onclick="AbrirOal()"> Ir a OAL </button>
+		<h2 id="miTexto">Texto colores </h2>
+		<button onmouseover="CambiarColor()" onmouseout ="VolverColor()"> Cambiar color </button>
+
+
+
+	<body>
+
+</html>
